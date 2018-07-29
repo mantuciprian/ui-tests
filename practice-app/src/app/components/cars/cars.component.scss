@@ -1,0 +1,23 @@
+.car-rows {
+    display: flex;
+}
+.car-row {
+padding: 20px;
+width: 100px;
+text-align: center;
+background-color: #3399FF;
+color: white;
+font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border-bottom: 1px solid white;
+}
+.header{
+    display: flex;
+    
+    .car-row {
+        background-color: #3366CC;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+}

@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    background-color: #333333;
+    color: white;
+    .navbar-item {
+        padding: 20px;
+        font-size: 21px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+
+        .dropdown {
+            position: absolute;
+            background-color: #3b3a3a63;
+            left: -96px;
+            top: 64px;
+            display: flex;
+            // width: 1920px;
+            visibility: hidden;
+            .dropdown-item {
+                padding: 15px;
+                font-size: 18px;
+                text-align: center
+            }
+        }
+    }
+
+    .cars:hover{
+        border-bottom: 2px solid whitesmoke;
+        .dropdown {
+            visibility: visible;
+        }
+    }
+}

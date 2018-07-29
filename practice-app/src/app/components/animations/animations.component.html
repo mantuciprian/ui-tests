@@ -1,0 +1,26 @@
+<div  [ngClass]="shown ? 'square': 'square-hidden'"></div>
+
+<div  [ngClass]="slide ? 'sideBar': 'sideBar-hidden'"></div>
+<div>
+  <button (click)='hideBar()'>show/hide</button>
+  <button (click)='slideBar()'>slide left bar</button>
+</div>
+
+<br><br><br>
+
+
+
+<hr>
+<h3>Acordeon</h3>
+
+<div class='drag-holder' (drop)="drop($event)" (dragover)="allowDrop($event)" id='holder'>
+    <div draggable="true" (dragstart)="drag($event)" id='drag1' correct='yellow' class='drag'>drag me on yellow</div>
+    <div draggable="true" (dragstart)="drag($event)" id='drag2' correct='green' class='drag'>drag me on green</div>
+</div>
+
+
+<div class='acordeon'>
+  <div id='yellow' (drop)="drop($event)" (dragover)="allowDrop($event)" class='yellowDiv'></div>
+  <div id='green' (drop)="drop($event)" (dragover)="allowDrop($event)" class='greenDiv'></div>
+</div>
+
