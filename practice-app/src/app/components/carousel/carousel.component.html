@@ -1,0 +1,14 @@
+<div class='carousel'>
+  <!-- <img class='pic' [ngClass]="" [src]="cars[0]" alt="">
+  <img class='pic' [ngClass]="" [src]="cars[1]" alt="">
+  <img class='pic' [ngClass]="" [src]="cars[2]" alt=""> -->
+  <div *ngFor='let pic of cars; let i = index '>
+    <img class='pic' [ngClass]="i === start ? 'anim' : '' " [src]="pic" alt="">
+  </div>
+
+  <div (click)='leftArr()' class='left-arr'><</div>
+  <div (click)='rightArr()' class='right-arr'>></div>
+</div>
+ <p>curect index {{start}}</p>
+
+ <p>{{curentCar}}</p>

@@ -10,6 +10,7 @@ import { CarsPipePipe } from './pipes/cars-pipe.pipe';
 import { FormsModule } from '@angular/forms';
 import { DisplayPipe } from './pipes/display.pipe';
 import { AnimationsComponent } from './components/animations/animations.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AnimationsComponent } from './components/animations/animations.componen
     CarsComponent,
     CarsPipePipe,
     DisplayPipe,
-    AnimationsComponent
+    AnimationsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

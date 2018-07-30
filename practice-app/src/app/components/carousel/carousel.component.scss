@@ -1,0 +1,46 @@
+.pic {
+    width:1200px;
+    height: 500px;
+    // animation: fadeIn;
+    // animation-duration: 2s;
+    position: absolute;
+    visibility: hidden
+}
+.anim {
+    visibility: visible;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+.carousel {
+    // text-align: center;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 1200px;
+    height: 500px;
+}
+.left-arr {
+    font-size: 60px;
+    position: absolute;
+    top: 200px;
+    left: -50px;
+}
+
+.right-arr {
+    font-size: 60px;
+    position: absolute;
+    top: 200px;
+    right: -50px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(200px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
