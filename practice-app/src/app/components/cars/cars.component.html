@@ -6,7 +6,7 @@
       <div class='car-row'>COLOR</div>
       <div class='car-row'>COUNTRY</div>
   </div>
-  <div  class='car-rows' *ngFor = 'let car of cars | carsPipe:searched:isDisplayed'>
+  <div  class='car-rows' *ngFor = 'let car of cars | carsPipe:searched'>
     <div  class='car-row'>{{car.make}}</div>
     <div  class='car-row'>{{car.year}}</div>
     <div  class='car-row'>{{car.price}}</div>
