@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { DisplayPipe } from './pipes/display.pipe';
 import { AnimationsComponent } from './components/animations/animations.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { Navbar2Component } from './components/navbar2/navbar2.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CarsPipePipe,
     DisplayPipe,
     AnimationsComponent,
-    CarouselComponent
+    CarouselComponent,
+    Navbar2Component
   ],
   imports: [
     BrowserModule,

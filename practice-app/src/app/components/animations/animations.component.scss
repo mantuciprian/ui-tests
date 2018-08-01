@@ -106,6 +106,28 @@
      height: 80px;
      margin: 2px;
  }
+ .test {
+    height:30px;
+    width: 300px;
+    background-color: red;
+    // animation-duration: 4s;
+    animation: slidedown 2s;
+    position: absolute;
+    top:300px;
+}
+
+
+
+@keyframes slidedown {
+    0%{
+        opacity: 0;
+        transform: translateX(-400px)
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
 @keyframes test {
     0% {
         transform: translateY(-50px)
