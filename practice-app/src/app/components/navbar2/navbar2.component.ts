@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Navbar2Component implements OnInit {
 
+  showMenu:boolean;
+  firstLoad:boolean;
   constructor() { }
 
   ngOnInit() {
+    this.showMenu = false;
+    this.firstLoad = true;
+  }
+
+  displayMenu() {
+    this.showMenu = !this.showMenu;
+    this.firstLoad = false;
   }
 
 }

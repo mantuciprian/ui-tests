@@ -1,12 +1,12 @@
 <ul class='navbar'>
     <li class='item'>Home</li>
-    <ul class='behind'>
+    <ul class='behind' [ngClass]="{'slideAnim': showMenu , 'slideAnim2': !showMenu, 'firstLoad': firstLoad }">
     <li class='item f'><span class='resp'>News</span> </li>
     <li class='item f'><span class='resp'>Contact</span> </li>
     <li class='item f'><span class='resp'>About</span> </li>
     </ul>
     
-    <li class='corner'><i class="material-icons pad">&#xe5d2;</i></li>
+    <li (click)='displayMenu()'  class='corner'><i class="material-icons pad">&#xe5d2;</i></li>
 </ul>
 
 <!-- <div class='test'></div> -->
