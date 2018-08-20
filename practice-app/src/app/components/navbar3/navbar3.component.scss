@@ -1,0 +1,138 @@
+.nav {
+  margin: 0px;
+  padding: 0px;
+//   padding: 20px 20px;
+  background-color:#F5431B;
+//   position: relative;
+//   z-index: 3;
+height: 38px;
+}
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    padding:10px 20px;
+    a {
+        color: white;         
+        text-decoration: none;
+    }
+ 
+}
+.leftList {
+    // float: left;
+     position: relative;
+}
+.rightList {
+    float: right;
+    position: relative;
+    // right: 40px;
+    left: 40px;
+    animation: slideUp 2s;
+}
+.rightList li {
+    padding:10px 35px;
+    display: inline-block;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    a {
+        color: white;  
+        text-decoration: none;
+    }
+}
+.rightList li:last-of-type {
+    border-right: none;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.drop-menu {
+    float: right;
+    list-style-type: none;
+    padding:8px 20px 0px 20px;
+}
+.menu {
+    transform: scale(1.3);
+    color: white;
+}
+.slideDown {
+    animation: slideD 2s;
+   visibility: visible !important;
+}
+.noanim {
+    animation:none;
+}
+.cover {
+    height: 0px;
+    background-color: #000000e5;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+   visibility: hidden;
+   transition: 0.5s
+
+}
+.showCover {
+    visibility: visible;
+    z-index: 1;
+    height: 100vh;
+}
+.cont {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    margin: auto;
+}
+@keyframes slideD {
+    0%   {top: -100px;z-index: 3; }
+    100% {top:38px;z-index: 3; }
+}
+@keyframes slideDC {
+    0%   {top: -100px;z-index: 3; }
+    100% {top:38px;z-index: 3; }
+}
+@keyframes slideUp {
+    0%   {top: 38px;z-index: 3;visibility: visible}
+    100% {top:-200px;z-index: 3;}
+}
+@media only screen and (max-width: 700px) {
+    .nav {
+       
+    }
+    .center {
+        display: block;
+    }
+    .logo{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        background-color:#F5431B;
+    }
+    .drop-menu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 11;
+    }
+    .rightList {
+        float: none;
+        padding: 0px;
+        left: 0px;
+        position: absolute;
+        width: 100%;
+        background-color:#F5431B;
+        visibility: hidden;
+        z-index: 2;
+        top: 38px;
+        li {
+            padding:10px 20px;
+            display:block;
+            border-left: none;
+            border-right: none;
+            border-top: 1px solid white;
+        }
+    }
+}

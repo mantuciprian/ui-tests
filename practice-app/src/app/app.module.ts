@@ -12,6 +12,7 @@ import { DisplayPipe } from './pipes/display.pipe';
 import { AnimationsComponent } from './components/animations/animations.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { Navbar2Component } from './components/navbar2/navbar2.component';
+import { Navbar3Component } from './components/navbar3/navbar3.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Navbar2Component } from './components/navbar2/navbar2.component';
     DisplayPipe,
     AnimationsComponent,
     CarouselComponent,
-    Navbar2Component
+    Navbar2Component,
+    Navbar3Component
   ],
   imports: [
     BrowserModule,

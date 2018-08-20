@@ -1,0 +1,16 @@
+<ul class='nav'>
+  
+  <li class='logo'> <a href="">Fxied nav</a> </li>
+  <li class='drop-menu' (click)='slideDownMenu()'><div class='center'><i class="material-icons menu">menu</i></div> </li>
+ 
+  <ul class='rightList' [ngClass]="{'slideDown': slideDown, 'noanim': disabledAnim }">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Projects</a></li>
+    <li><a href="">Blog</a></li>
+  </ul>
+  
+ 
+</ul>
+<div class='cover' (click)='slideDownMenu()' [ngClass]="{'showCover':  slideDown}"></div>
+<div class='cont'>content...</div>
