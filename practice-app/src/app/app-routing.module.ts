@@ -7,6 +7,7 @@ import { AnimationsComponent } from 'src/app/components/animations/animations.co
 import { CarouselComponent } from 'src/app/components/carousel/carousel.component';
 import { Navbar2Component } from './components/navbar2/navbar2.component';
 import { Navbar3Component } from './components/navbar3/navbar3.component';
+import { Navbar4Component } from './components/navbar4/navbar4.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'carousel', component: CarouselComponent},
   {path: 'navbar2', component: Navbar2Component},
   {path: 'navbar3', component: Navbar3Component},
+  {path: 'navbar4', component: Navbar4Component},
   {path: '',   redirectTo: '/home', pathMatch: 'full'},
 ];
 

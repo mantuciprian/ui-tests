@@ -13,6 +13,7 @@ import { AnimationsComponent } from './components/animations/animations.componen
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { Navbar2Component } from './components/navbar2/navbar2.component';
 import { Navbar3Component } from './components/navbar3/navbar3.component';
+import { Navbar4Component } from './components/navbar4/navbar4.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Navbar3Component } from './components/navbar3/navbar3.component';
     AnimationsComponent,
     CarouselComponent,
     Navbar2Component,
-    Navbar3Component
+    Navbar3Component,
+    Navbar4Component
   ],
   imports: [
     BrowserModule,
