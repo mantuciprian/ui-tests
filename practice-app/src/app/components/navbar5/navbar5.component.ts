@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar4',
-  templateUrl: './navbar4.component.html',
-  styleUrls: ['./navbar4.component.scss']
+  selector: 'app-navbar5',
+  templateUrl: './navbar5.component.html',
+  styleUrls: ['./navbar5.component.scss']
 })
-export class Navbar4Component implements OnInit {
+export class Navbar5Component implements OnInit {
+
   showTabs: boolean;
   dontAnim: boolean;
   constructor() { }
@@ -19,5 +20,6 @@ export class Navbar4Component implements OnInit {
     this.showTabs = !this.showTabs;
     this.dontAnim = false;
   }
+
 
 }

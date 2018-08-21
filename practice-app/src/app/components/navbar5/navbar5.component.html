@@ -1,0 +1,27 @@
+<ul class='nav'>
+  <ul class='logo'>
+    <li> <a href="">Fixed Nav</a> </li> 
+    <li (click) = 'toggleTabs()' class='drop-menu '> <a class="material-icons menu">menu</a> </li> 
+  </ul>
+  <ul class='tabs slideTab' [ngClass]="{'slideTab': showTabs, 'slideTabUp': !showTabs, 'noanim': dontAnim}"> 
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Projects</a></li>
+    <li class='blog-cell'>
+      <a class='blog' href="">Blog</a>
+      <div class='blog-container'>
+          <ul class='blog-list'>
+              <li>personal</li>
+              <li>contact</li>
+              <li>my blog</li>
+            </ul>
+      </div>
+
+    </li>
+  </ul>
+
+</ul>
+
+<div class='layer' (click) = 'toggleTabs()'  [ngClass]="{'expand-layer': showTabs}"></div>
+
+<div>content here....</div>

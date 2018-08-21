@@ -8,6 +8,7 @@ import { CarouselComponent } from 'src/app/components/carousel/carousel.componen
 import { Navbar2Component } from './components/navbar2/navbar2.component';
 import { Navbar3Component } from './components/navbar3/navbar3.component';
 import { Navbar4Component } from './components/navbar4/navbar4.component';
+import { Navbar5Component } from 'src/app/components/navbar5/navbar5.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'navbar2', component: Navbar2Component},
   {path: 'navbar3', component: Navbar3Component},
   {path: 'navbar4', component: Navbar4Component},
+  {path: 'navbar5', component: Navbar5Component},
   {path: '',   redirectTo: '/home', pathMatch: 'full'},
 ];
 
