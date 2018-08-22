@@ -85,7 +85,7 @@ a {
     height: 100vh;
 }
 .noanim {
-    animation: none;
+    animation: none !important;
 }
 
 
@@ -95,19 +95,41 @@ a {
 .blog-list {
     position: absolute;
     right: 0px;
-    top:60px;
+    top:59px;
     padding: 0px;
-    // display: none;
+    visibility: hidden;
+    z-index: -1;
 }
 .blog-list li {
     display: block
 }
-.blog-cell:hover {
-    .blog-list {
-        display: block
+@media only screen and (min-width: 700px) {
+    .blog-cell:hover {
+        .blog-list {
+            visibility: visible;
+            z-index: 1;
+        }
     }
+ }
+
+
+.slideToRight {
+    z-index: 5 !important;
+    visibility: visible !important;
+    animation: slideRight 1s;
 }
 
+.slideToLeft {
+    animation: slideLeft 1s;
+}
+.slideToLeftList {
+    animation: slideLeftList 1s;
+}
+
+.showBlogList {
+    visibility: visible !important;
+    z-index: 5  !important;
+}
 
 
  @keyframes slideDown {
@@ -126,6 +148,34 @@ a {
        transform: translateY(-300px);visibility: visible
     }
 }
+
+@keyframes slideRight {
+    0% {
+       transform: translateX(-200px);
+    }
+    100% {
+       transform: translateX(0px)
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+       transform: translateX(0px);visibility: visible
+    }
+    100% {
+       transform: translateX(-400px);visibility: visible
+    }
+}
+
+@keyframes slideLeftList {
+    0% {
+        visibility: visible
+     }
+     100% {
+        visibility: visible
+     }
+}
+
 
 @media only screen and (max-width: 700px) {
     .tabs {
@@ -154,11 +204,15 @@ a {
         z-index: 1;
     }
     .blog-list {
+        // position: relative;
         right: 0px;
         top:0px;
         padding: 0px;
-        display:block;
+        // display:block;
         width: 100%;
+        // visibility: visible;
+        z-index: 5;
+        // visibility: visible;
     }
     .blog-container {
         width: 100%;
@@ -167,16 +221,26 @@ a {
         top:-190px;
         height: 100vh;
         background-color: black;
-        z-index: 10 !important;
+        // z-index: 5;
+        visibility: hidden;
+        // animation: slideLeft 1s;
+        // z-index: 5;
+        // animation: slideRight 1s;
         // display: none;
+        
     }
     .blog-cell {
         position: relative;
     }
-    .blog-cell:hover {
-        .blog-list {
-            display: none;
-        }
+
+    .showBlogContainer {
+        visibility: visible !important;
+        z-index: 5 !important ;
     }
+    .showBlogList {
+        visibility: visible !important;
+        z-index: 6 !important ;
+    }
+ 
 
 }

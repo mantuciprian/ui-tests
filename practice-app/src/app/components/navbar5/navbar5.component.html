@@ -8,13 +8,14 @@
     <li><a href="">About</a></li>
     <li><a href="">Projects</a></li>
     <li class='blog-cell'>
-      <a class='blog' href="">Blog</a>
-      <div class='blog-container'>
-          <ul class='blog-list'>
+      <a class='blog' (click)='toggleBlog()'>Blog</a>
+      <div (click)='toggleBlog()' class='blog-container'   [ngClass]="{'noanim': dontAnimBlog,'showBlogContainer': showBlog, 'slideToRight': showBlog, 'slideToLeft': !showBlog}">
+          <ul class='blog-list' [ngClass]="{'showBlogList': showBlog}">
               <li>personal</li>
               <li>contact</li>
               <li>my blog</li>
             </ul>
+            <div class='close-area'></div>
       </div>
 
     </li>
